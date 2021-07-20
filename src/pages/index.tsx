@@ -27,7 +27,7 @@ export default function Home(props) {
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | pomoUp</title>
+          <title>Início | PomoUp</title>
         </Head>
         <ExperienceBar />
         <CountdownProvider>
@@ -50,13 +50,8 @@ export default function Home(props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const {
-    level,
-    currentExperience,
-    challengesCompleted,
-    name,
-    gitHub,
-  } = ctx.req.cookies;
+  const { level, currentExperience, challengesCompleted, name, gitHub } =
+    ctx.req.cookies;
 
   return {
     props: {
