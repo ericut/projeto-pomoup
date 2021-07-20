@@ -1,0 +1,71 @@
+.modalOverlay {
+  background: rgba(242, 243, 245, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background: var(--white);
+  width: 100%;
+  /* height: 360px; */
+  max-width: 460px;
+  padding: 3rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContainer header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.modalContainer p {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.modalContainer input {
+  width: 100%;
+  height: 46px;
+  padding-left: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--text);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.modalContainer button {
+  width: 100%;
+  height: 5rem;
+  max-height: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.modalContainer button:not(:disabled):hover {
+  background: var(--blue-dark);
+}
